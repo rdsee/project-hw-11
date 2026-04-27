@@ -39,3 +39,23 @@
     # while line:
     #     print(line, end="")
     #     line = myfile.readline() тоже с циклом просто ридлайн функция
+
+##########################
+
+FILENAME = 'notes.txt'
+NOTES_COUNT = 3
+
+
+notes = []
+
+for i in range(NOTES_COUNT):
+    notes.append(input(f"Enter note {i+1}: ").strip())
+
+with open(FILENAME, "a") as file:
+    for i in range(NOTES_COUNT):
+        file.write(f"{i + 1}. {notes[i]}\n")
+
+with open(FILENAME, "r") as file:
+    print(file.read())
+
+
