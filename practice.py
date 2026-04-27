@@ -129,3 +129,16 @@
 #         print(row["name"], " --> ", row["phone"])
 
 ##
+##
+# import os
+# #
+# # os.mkdir("test_folder") слздает папку
+# #
+# # os.rmdir("test_folder") удаляет папку
+#
+# file_name = "my_file.txt"
+# if os.path.exists(file_name): #она вернет тру если файл есть, а если нет - фолс
+#     os.remove(file_name)
+#     print("File removed!")
+# else:
+#     print("File not found!")
