@@ -19,6 +19,16 @@ with open(myfile) as f:
 
 print(f"Words: {len(result)}")
 
+#3
+with open(myfile) as f:
+    result = f.read().split()
 
+banned = ["or", "to", "die"]
+
+for i in range(len(result)):
+    if result[i] in banned:
+        result[i] = "***"
+result = " ".join(result)
+print(result)
 
 
