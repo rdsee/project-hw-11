@@ -143,10 +143,10 @@
 # else:
 #     print("File not found!")
 
-with open("f1/f2/hello_1.txt", "w") as myfile:
-    myfile.write("hello world")
-
-with open("../../notes.txt", "w") as myfile:
-    myfile.write("hello world")
+# with open("f1/f2/hello_1.txt", "w") as myfile:
+#     myfile.write("hello world")
+#
+# with open("../../notes.txt", "w") as myfile:
+#     myfile.write("hello world")
 
 
