@@ -25,10 +25,14 @@ with open(myfile) as f:
 
 banned = ["or", "to", "die"]
 
+count = 0
 for i in range(len(result)):
-    if result[i] in banned:
+    if result[i].lower().strip(".,!?:;'") in banned:
         result[i] = "***"
+        count += 1
 result = " ".join(result)
-print(result)
+print(f"Result: {result}")
+print(f"Count of replacaments: {count}")
+
 
 
